@@ -1,0 +1,74 @@
+// ==========================================================================
+// Theme Style Main
+// ==========================================================================
+
+/*!
+Theme Name: Odin
+Author URI: http://wpod.in/
+Description: Odin main stylesheet.
+Author: the Odin team
+Author URI: http://wpod.in/#colaboradores
+*/
+
+@import
+        "variables",           // Theme       Custom Variables
+        "bootstrap/bootstrap", // Bootstrap   Styles Core
+        "wordpress/wordpress", // WordPress   Styles Core
+        //"woocommerce",       // WooCommerce Styles Core
+        "odin/core",           // Odin        Styles Core
+        "layout"               // Theme       Custom Layout
+;
+
+body {
+  background: #6c1ba8;
+  font-family: 'Nunito', sans-serif;
+}
+
+.quadro {
+  background-color: #ffffff;
+  min-height: 500px;
+  border-radius: 50px;
+  padding: 72px;
+  margin-top: 60px;
+
+}
+
+.clouds {
+  position: relative;
+}
+.cloud-s {
+  top: 52px;
+  right: 340px;
+  position: absolute;
+}
+.cloud-b {
+  top:60px;
+  right:80px;
+  position: absolute;
+}
+
+.slider {
+  img {
+    border-radius: 50px;
+   }
+}
+
+.under-slide {
+  margin-top: 100px;
+}
+
+.sobre {
+  p {
+    font-size: 16px;
+    color: $primary-color;
+    margin-top: 23px;
+  }
+}
+
+.bonecos {
+  img {
+    margin-top: 24px;
+  }
+}
+
+
