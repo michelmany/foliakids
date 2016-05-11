@@ -26,6 +26,16 @@
 
 <body <?php body_class(); ?>>
 
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=124057441026006";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
 	<header id="header" role="banner">
 		<div class="container">
 			<a class="navbar-brand" href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
@@ -36,6 +46,8 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cloud_s.png" alt="clouds">
 				</div>
 				<div class="cloud-b">
+					<a href="https://www.facebook.com/foliakidsfestas/" target="_blank"><img class="face_icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/face_icon.png" alt="Curta nossa fanpage"></a>
+
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cloud_b.png" alt="clouds">
 				</div>
 			</div>

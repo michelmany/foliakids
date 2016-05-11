@@ -65,6 +65,11 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 				'main-menu' => __( 'Main Menu', 'odin' )
 			)
 		);
+		register_nav_menus(
+			array(
+				'footer-menu' => __( 'Footer Menu', 'odin' )
+			)
+		);
 
 		/*
 		 * Add post_thumbnails suport.
@@ -302,3 +307,40 @@ if ( is_woocommerce_activated() ) {
 	require get_template_directory() . '/inc/woocommerce/functions.php';
 	require get_template_directory() . '/inc/woocommerce/template-tags.php';
 }
+
+
+/* Add image suport*/
+add_image_size( 'capa-tema', 220, 180 ); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
+
+
+require_once get_template_directory() . '/core/classes/class-post-type.php';
+
+
+/*
+* CUSTOM POSTS
+*/
+
+/* Temas */
+function odin_tema_cpt() {
+    $tema = new Odin_Post_Type(
+        'Tema', // Nome (Singular) do Post Type.
+        'tema' // Slug do Post Type.
+    );
+
+    $tema->set_labels(
+        array(
+            'menu_name' => __( 'Temas', 'odin' )
+        )
+    );
+
+    $tema->set_arguments(
+        array(
+            'supports' => array( 'title' ),
+            'menu_icon' => 'dashicons-camera'
+        )
+    );
+}
+
+add_action( 'init', 'odin_tema_cpt', 1 );
+
+/* PACOTES */

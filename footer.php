@@ -15,7 +15,32 @@
 
 	<footer id="footer" role="contentinfo">
 		<div class="container">
-			<p>&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'odin' ); ?> | <?php echo sprintf( __( 'Powered by the <a href="%s" rel="nofollow" target="_blank">Odin</a> forces and <a href="%s" rel="nofollow" target="_blank">WordPress</a>.', 'odin' ), 'http://wpod.in/', 'http://wordpress.org/' ); ?></p>
+			<div class="footer-content">
+				<div class="col-md-6">
+					<div class="face hidden-xs">
+						<h3>Mais de 4000 fãs no facebook!</h3>
+						<div class="fb-like" data-href="https://facebook.com/foliakidsfestas" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="footer-menu text-right hidden-xs">
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'footer-menu',
+								'depth'          => 2,
+								'container'      => false,
+								'menu_class'     => 'nav navbar-nav navbar-right',
+								'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+								'walker'         => new Odin_Bootstrap_Nav_Walker()
+							)
+						);
+						?>
+					</div>
+					<div class="clearfix"></div>
+					<p class="pull-right">&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?> - Desenvolvido pela <a href="http://nitdesign.com.br"><img src="http://foliakids.com/site/wp-content/themes/foliakids/imagens/logo_nitdesign_footer.png"></a> </p>
+				</div>
+			</div>
 		</div><!-- .container -->
 	</footer><!-- #footer -->
 

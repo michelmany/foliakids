@@ -34,14 +34,31 @@
             color: #fff!important;
             font-size: 24px;
             font-weight: bold;
+            border: 2px solid transparent;
+            border-bottom: 4px solid transparent;
+            margin-right: 3px;
             &:hover {
-                color: #ffff00!important;
+                color: #fff!important;
+                background-color: transparent;
+                border-radius: 10px;
+                border: 2px solid $secondary-color;
+                border-bottom: 4px solid #D37A04;                
             }
         }
     }
     .navbar-brand {
         margin: 28px 0 0 9px;
+      img {
+        position: absolute;
+        z-index: 9999;
+      }
     }
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    background-color: $secondary-color;
+    border-radius: 10px;
+    border-bottom: 4px solid #D37A04!important;
 }
 
 // ==========================================================================
@@ -119,21 +136,78 @@
 // Sticky footer styles
 //
 #footer {
-    text-align: center;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px;
-    background-color: #f5f5f5;
-    padding-top: 15px;
+    height: 300px;
+    background-color: $secondary-color;
+    z-index: 999;
+    border-bottom: 12px solid #d37a04;
+    .footer-content {
+        color: #fff;
+        padding: 110px 60px 0;
+        .face {
+          margin-top: -20px;
+          color: $primary-color;
+        }
+        li {
+          a {
+              color: #fff;
+              border-radius: 10px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              &:hover {
+                  color: #fff;
+                  background: $primary-color;
+
+              }
+          }
+        }
+        p {
+          margin-top: 15px;
+          font-size: 12px;
+        }
+    }
 }
 
 html {
     position: relative;
     min-height: 100%;
     overflow-y: scroll;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
-    margin-bottom: 70px;
+  background: linear-gradient(180deg, #6b1ba6, #a618bd, #f07521);
+  background-size: 600% 600%;
+
+  -webkit-animation: BgFoliaAnimator 12s ease infinite;
+  -moz-animation: BgFoliaAnimator 12s ease infinite;
+  -o-animation: BgFoliaAnimator 12s ease infinite;
+  animation: BgFoliaAnimator 12s ease infinite;
+
+  @-webkit-keyframes BgFoliaAnimator {
+    0%{background-position:55% 0%}
+    50%{background-position:46% 100%}
+    100%{background-position:55% 0%}
+  }
+  @-moz-keyframes BgFoliaAnimator {
+    0%{background-position:55% 0%}
+    50%{background-position:46% 100%}
+    100%{background-position:55% 0%}
+  }
+  @-o-keyframes BgFoliaAnimator {
+    0%{background-position:55% 0%}
+    50%{background-position:46% 100%}
+    100%{background-position:55% 0%}
+  }
+  @keyframes BgFoliaAnimator {
+    0%{background-position:55% 0%}
+    50%{background-position:46% 100%}
+    100%{background-position:55% 0%}
+  }
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 260px;
 }
+

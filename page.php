@@ -14,6 +14,7 @@ get_header(); ?>
 
 	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
 
+		<div class="quadro">
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
@@ -27,6 +28,9 @@ get_header(); ?>
 					endif;
 				endwhile;
 			?>
+		</div>
+
+		<?php get_template_part( 'stars', 'page' ); ?>
 
 	</main><!-- #main -->
 
