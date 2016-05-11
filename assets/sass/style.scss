@@ -179,3 +179,70 @@ h1.entry-title {
     color: $primary-color;
   }
 }
+
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+      .navbar-brand>img { width: 250px;}     
+      #footer .footer-content li a {  padding: 10px;}
+      #header #main-navigation .navbar-nav > li > a { font-size: 21px; }      
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+      .navbar-brand>img { width: 250px;}        
+      .clouds .cloud-b { top: 10px; right: 10px; }      
+      .clouds .cloud-s { top: 52px; right: 257px;}
+      .quadro { border-radius: 10px; padding: 44px 23px 100px; margin-top: 0px;}
+      .slider img { border-radius: 10px; }
+      .sobre {text-align: center;}
+      .under-slide {margin-top: 40px;}
+
+      #footer .footer-content { padding: 83px 10px 0; }   
+      #footer .footer-content .face { text-align: center; margin-bottom: 20px;}   
+   
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+      .navbar-brand>img { width: 50%;}        
+      .clouds .cloud-b { top: 10px; right: 10px; }      
+      .quadro { border-radius: 0; padding: 44px 23px 100px; margin-top: 0px;}
+      .slider img { border-radius: 10px; }
+      .sobre {text-align: center;}
+      .under-slide {margin-top: 40px;}
+      .cloud-b>a>img { display: none;}
+      .cloud-s { display: none; }
+      #header .navbar-brand { margin: 0;}
+      .navbar-toggle { float: right; margin-right: 15px; margin-top: 10px; }
+      .navbar-default .navbar-toggle .icon-bar { background-color: $secondary-color; }      
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+      .navbar-brand>img { width: 80%;}        
+      .clouds .cloud-b { top: 10px; right: 80px; }      
+      .quadro { border-radius: 0; padding: 44px 23px 100px; margin-top: 0px;}
+      .slider img { border-radius: 10px; }
+      .sobre {text-align: center;}
+      .under-slide {margin-top: 40px;}
+      .cloud-b>a>img { display: none;}
+      .cloud-s { display: none; }
+      #header .navbar-brand { margin: 0;}
+      .navbar-toggle { float: left; margin-left: 127px; margin-top: 50px; }
+      .navbar-default .navbar-toggle .icon-bar { background-color: $secondary-color; }
+
+    }

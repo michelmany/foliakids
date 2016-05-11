@@ -15,7 +15,7 @@
                         <a href="<?php bloginfo('home'); ?>/a-casa/">Saiba mais..</a></p>
                 </div>
                 <div class="col-md-6 bonecos">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bonecos.png" class="img-responsive"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bonecos.png" class="img-responsive cener-block"/>
                 </div>
 
             </div>

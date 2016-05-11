@@ -39,7 +39,7 @@
 	<header id="header" role="banner">
 		<div class="container">
 			<a class="navbar-brand" href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"/>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="img-responsive"/>
 			</a>
 			<div class="clouds">
 				<div class="cloud-s">
