@@ -165,10 +165,10 @@ h1.entry-title {
 
   h3 {
     padding: 10px 25px;
-    border: 2px solid $secondary-color;
     text-align: center;
     color: $primary-color;
     margin-bottom: 20px;
+    background-color: #90D147;
   }
 }
 
@@ -180,6 +180,12 @@ h1.entry-title {
   }
 }
 
+.btn-default, input[type="submit"], input[type="reset"], button {
+    color: #333;
+    background-color: #90d147;
+    border-color: #90D147;
+}
+
 
 
 
@@ -187,20 +193,24 @@ h1.entry-title {
 
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
-
+      .navbar-brand>img { width: 260px;}     
+      #footer .footer-content li a {  padding: 10px;}
+      #header #main-navigation .navbar-nav > li > a { font-size: 21px; }    
+      .quadro {  padding: 44px 23px 100px; margin-top: 0px;} 
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
-      .navbar-brand>img { width: 250px;}     
+      .navbar-brand>img { width: 220px;}     
       #footer .footer-content li a {  padding: 10px;}
-      #header #main-navigation .navbar-nav > li > a { font-size: 21px; }      
+      #header #main-navigation .navbar-nav > li > a { font-size: 21px; }    
+      .quadro { border-radius: 10px; padding: 44px 23px 100px; margin-top: 0px;}  
     }
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
 
-      .navbar-brand>img { width: 250px;}        
+      .navbar-brand>img { width: 220px;}        
       .clouds .cloud-b { top: 10px; right: 10px; }      
       .clouds .cloud-s { top: 52px; right: 257px;}
       .quadro { border-radius: 10px; padding: 44px 23px 100px; margin-top: 0px;}
@@ -209,7 +219,8 @@ h1.entry-title {
       .under-slide {margin-top: 40px;}
 
       #footer .footer-content { padding: 83px 10px 0; }   
-      #footer .footer-content .face { text-align: center; margin-bottom: 20px;}   
+      #footer .footer-content .face { text-align: center; margin-bottom: 20px;} 
+      .navbar-default .navbar-toggle .icon-bar { background-color: $secondary-color; }  
    
 
     }

@@ -18,7 +18,7 @@
         <li>Mini X-burguer</li>
         <li>Pão de Queijo</li>
         <li>Nuggets</li>
-        <li>Cachorro Quente</li>
+        <li>Baby dog de forno</li>
         <li>Batata Frita</li>
         <li>Pipoca</li>
         <li>Gelatina</li>
@@ -34,7 +34,7 @@
     <ul>
         <li>Refrigerantes normal e light</li>
         <li>Água mineral</li>
-        <li>Refresco</li>
+        <li>Suco</li>
     </ul>
 </div>
 <div class="col-md-6">

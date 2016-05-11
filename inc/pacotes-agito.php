@@ -17,7 +17,8 @@
         <li>Mini X-burguer</li>
         <li>Pão de Queijo</li>
         <li>Nuggets</li>
-        <li>Cachorro Quente</li>
+        <li>Baby dog de forno</li>
+        <li>Salgados assados, fritos e folheados</li>
         <li>Batata Frita</li>
         <li>Pipoca</li>
         <li>Gelatina (extensivo aos adultos)</li>
@@ -25,14 +26,14 @@
 
     <h4>Coquetel adulto</h4>
     <ul>
-        <li>Todas as variedades de Salgados fritos e assados</li>
+        <li>Todas as variedades de Salgados assados, fritos e folheados</li>
     </ul>
 
     <h4>Bebidas</h4>
     <ul>
         <li>Refrigerantes normal e light</li>
         <li>Água mineral com e sem gás</li>
-        <li>1 tipo de Refresco</li>
+        <li>1 tipo de suco</li>
     </ul>
     
     <h4>Bolo Pintado no tema da festa</h4>
@@ -46,7 +47,6 @@
         <li>Brigadeiro Branco</li>
         <li>Casadinho</li>
         <li>Beijinho</li>
-        <li>Cajuzinho</li>
         <li>Moranguinho</li>
     </ul>
 

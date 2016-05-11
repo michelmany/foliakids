@@ -8,7 +8,7 @@
         <li>Mesa do bolo</li>
         <li>Mesa dos doces</li>
         <li>Peças em escultura para cenário da mesa do bolo</li>
-        <li>700 bolas</li>
+        <li>600 bolas</li>
     </ul>
 
     <h4>Buffet Infantil</h4>
@@ -17,29 +17,24 @@
         <li>Mini X-burguer</li>
         <li>Pão de Queijo</li>
         <li>Nuggets</li>
-        <li>Cachorro Quente</li>
+        <li>Baby dog de forno</li>
         <li>Batata Frita</li>
         <li>Pipoca</li>
         <li>Gelatina (extensivo aos adultos)</li>
     </ul>
 
-    <h4>1 Tábua de frios e pasta</h4>
-    <ul>
-        <li>Para mesa de convidados</li>
-    </ul>
-
     <h4>Coquetel adulto</h4>
     <ul>
-        <li>Todas as variedades de Salgados fritos e assados</li>
+        <li>Todas as variedades de Salgados assados, fritos e folheados</li>
     </ul>
 
-    <h4>1 Mini - Porção (à escolher)</h4>
+    <h4>1 mini - porção</h4>
 
     <h4>Bebidas</h4>
     <ul>
         <li>Refrigerantes normal e light</li>
         <li>Água mineral com e sem gás</li>
-        <li>2 tipos de Suco de fruta</li>
+        <li>1 tipo de suco para adultos e 2 infantis</li>
     </ul>
     
     <h4>Bolo Pintado no tema da festa</h4>
@@ -56,7 +51,7 @@
         <li>Beijinho</li>
         <li>Moranguinho</li>
         <li>Power Ball</li>
-        <li>Surpresinha de uva</li>
+        <li>Surpresinha de nozes</li>
         <li>Olho de Sogra</li>
     </ul>
 
